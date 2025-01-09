@@ -60,13 +60,12 @@ body {
   }
   .bg-gradienttext{
     background: linear-gradient(180deg,#2138ffc9,#011b2b);
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
    
   }
-  .btn-gradient{
-    background: linear-gradient(180deg,#e43838c9,rgb(241, 192, 57));
-  }
+ 
   .paused{
     animation-play-state: paused;
   }

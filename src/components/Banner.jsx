@@ -23,7 +23,7 @@ const Banner = () => {
         whileInView={{ y:0,opacity: 1 }}
         transition={{ duration:1, ease: 'easeIn',delay:.2 }}
       >
-        <h1 className="w-full text-md md:text-2xl lg:text-4xl  font-extrabold uppercase text-center  bg-gradienttext ">
+        <h1 className="w-full text-md md:text-2xl lg:text-4xl  font-extrabold uppercase text-center bg-gradienttext ">
         Your Gateway to Strength and Style
    
         </h1>
