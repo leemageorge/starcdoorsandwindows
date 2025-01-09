@@ -61,6 +61,7 @@ body {
   .bg-gradienttext{
     background: linear-gradient(180deg,#2138ffc9,#011b2b);
     background-clip: text;
+    color: transparent;
    
   }
   .btn-gradient{
