@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #e8eef5;
   --foreground: #171717;
 }
 
@@ -17,5 +17,56 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Gotham, sans-serif;
+}
+
+@layer components{
+  .nav__links:hover{
+    color: #0b2545;
+    transition: all 0.4s;
+
+  }
+  .nav__links::after{
+    position: absolute; 
+    content: "";
+    background: #e73737;
+    height: 3px;
+    width:100%;
+    bottom: -5px;
+    left: 0;
+    scale: 0  ;
+  
+    transform-origin: left;
+    transition: all 0.4s;
+  }
+  .nav__links:hover::after{
+    scale: 1;
+  }
+  .footer__heading{
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 0.875rem;
+    font-weight: bold;
+  }
+  .footer__heading:hover{
+    color: #398ef0 ;
+  }
+  .footer__links{
+    cursor: pointer;
+    font-size: 0.875rem;
+  }
+  .footer__links:hover{
+   color: #398ef0 ;
+  }
+  .bg-gradienttext{
+    background: linear-gradient(180deg,#2138ffc9,#011b2b);
+    background-clip: text;
+   
+  }
+  .btn-gradient{
+    background: linear-gradient(180deg,#e43838c9,rgb(241, 192, 57));
+  }
+  .paused{
+    animation-play-state: paused;
+  }
 }
