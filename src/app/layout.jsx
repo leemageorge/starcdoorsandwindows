@@ -9,12 +9,16 @@ import ClickToScroll from '../components/ClickToScroll';
 import BottomNav from '../components/Bottomnav';
 
 
-const gotham = localFont({
+const gothamMedium = localFont({
   src: './fonts/Gotham-Medium.woff',
   variable: '--font-gotham',
 
 });
+const gothamLight = localFont({
+  src: './fonts/Gotham-Light.woff',
+  variable: '--font-gotham',
 
+});
 
 export const metadata = {
   title: "Starc Steel Windows and Doors",
@@ -25,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={clsx(gotham.variable,"antialiased")}
+        className={clsx(`${gothamMedium.variable}, ${gothamLight.variable},"antialiased"`)}
       >
         <Navbar />
         {children}

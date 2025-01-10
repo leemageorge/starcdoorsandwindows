@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md ">
-      <div className="container py-2 flex justify-between items-center w-full ">
+      <div className=" py-3 flex justify-between items-center w-full px-12">
         <Link href="/">
           <Image src={StarkLogo} alt="logo image" className="w-20 md:w-28"  />
         </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
         {/* Navigation Links */}
         <div className="hidden lg:flex gap-8 text-primary relative z-50">
           {links.map((link) => (
-            <div key={link.id} className="" >
+            <div key={link.id} className="text-md uppercase -tracking-wide" >
               {link.title === "Product Gallery" ? (
                 <div className="relative flex items-center cursor-pointer dropdown">
                   <span className="font-bold nav__links flex items-center " onClick={() => setDropdownOpen(!dropdownOpen)} >{link.title}

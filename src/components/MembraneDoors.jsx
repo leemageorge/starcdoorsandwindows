@@ -19,6 +19,7 @@ import M13 from "../assets/images/m13.webp"
 import M14 from "../assets/images/m14.webp"
 import M15 from "../assets/images/m15.webp"
 
+import { motion} from 'framer-motion';
 
 const membraneDoors = [
   {id:1,src: M1},
@@ -47,13 +48,16 @@ const MembraneDoors = () => {
       
   return (
         <div className='flex flex-col gap-5'>
-          <h2 className='text-2xl font-bold text-primary uppercase tracking-wide text-center'>Fibre/BathRoom Doors<span className='text-red-700 font-extrabold ml-3 '>&#x2192;</span></h2>
+          {/* <h2 className='text-2xl font-bold text-primary uppercase tracking-wide text-center'>Fibre/BathRoom Doors<span className='text-red-700 font-extrabold ml-3 '>&#x2192;</span></h2> */}
           <div className='flex flex-wrap gap-5 items-center justify-center'>
       {
      membraneDoors.map((membraneDoor)=>(
-          <a href='#' className='w-80 h-auto cursor-pointer bg-gray-100 ' key={membraneDoor.id} onClick={()=> handleImgClick(membraneDoor.src)}>
+          <motion.div href='#' className='w-80 h-auto cursor-pointer bg-gray-100 ' key={membraneDoor.id} onClick={()=> handleImgClick(membraneDoor.src)}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, ease: 'easeIn' }}>
             <Image src={membraneDoor.src} alt="Steel Doors" className='w-full h-full object-contain rounded-lg shadow-md' />
-          </a>
+          </motion.div>
         ))
       }
       </div>

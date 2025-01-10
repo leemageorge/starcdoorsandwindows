@@ -20,8 +20,11 @@ const Footer = () => {
         />
     </Link>
     <p className="mt-6">We deliver Doors and windows as your home deserves. Please step into the next level with starc steel and windows.</p>
-    <p className="mt-4">uvaiz@starcwindows.com</p>
-    <Link href='tel:+919746097373' className="mt-4">+91 9746097373</Link>
+    <div className="flex flex-col mt-4 gap-1">
+    <p className="flex gap-2 items-center"><Image src={mail} alt="call" className="w-[20px] h-[20px]"/>uvaiz@starcwindows.com</p>
+    <Link href='tel:+919746097373' className="flex gap-2"> <Image src={call} alt="call" className="w-[20px] h-[20px] "/>+91 9746097373</Link>
+    <Link href='tel:+919947644484' className="flex gap-2" > <Image src={call} alt="call" className="w-[20px] h-[20px] "/>+91 9947644484</Link>
+    </div>
     <div className="flex items-center space-x-4 mt-6">
     <Link href='' ><Image src={facebook} alt="facebook" className="w-[20px] h-[20px]"/></Link>
     <Link href='' ><Image src={insta} alt="insta" className="w-[20px] h-[20px]"/></Link>
@@ -56,11 +59,11 @@ const Footer = () => {
      </div>
      <div className="flex items-center gap-4 mt-4">
      <Image src={call} alt="call" className="w-[20px] h-[20px]"/>
-     <p className="footer__links">+91 9746097373(Kerala)</p>
+     <p className="footer__links">+91 9746097373</p>
      </div>
      <div className="flex items-center gap-4 mt-4">
      <Image src={call} alt="call" className="w-[20px] h-[20px] "/>
-     <p className="footer__links">+91 9746097373(Out of Kerala)</p>
+     <p className="footer__links">+91 9947644484</p>
      </div>
      <div className="flex items-center gap-4 mt-4">
      <Image src={mail} alt="call" className="w-[20px] h-[20px]"/>

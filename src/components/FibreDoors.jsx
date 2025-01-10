@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 import F1 from "../assets/images/f1.webp"
 import F2 from "../assets/images/f2.webp"
@@ -70,13 +71,16 @@ const FibreDoors = () => {
       
   return (
         <div className='flex flex-col gap-5'>
-          <h2 className='text-2xl font-bold text-primary uppercase tracking-wide text-center'>Fibre/BathRoom Doors<span className='text-red-700 font-extrabold ml-3 '>&#x2192;</span></h2>
+          {/* <h2 className='text-2xl font-bold text-primary uppercase tracking-wide text-center'>Fibre/BathRoom Doors<span className='text-red-700 font-extrabold ml-3 '>&#x2192;</span></h2> */}
           <div className='flex flex-wrap gap-5 items-center justify-center'>
       {
        fibreDoors.map((fibreDoor)=>(
-          <a href='#' className='w-80 h-auto cursor-pointer bg-gray-100 ' key={fibreDoor.id} onClick={()=> handleImgClick(fibreDoor.src)}>
+          <motion.div href='#' className='w-80 h-auto cursor-pointer bg-gray-100 ' key={fibreDoor.id} onClick={()=> handleImgClick(fibreDoor.src)}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, ease: 'easeIn' }}>
             <Image src={fibreDoor.src} alt="Steel Doors" className='w-full h-full object-contain rounded-lg shadow-md' />
-          </a>
+          </motion.div>
         ))
       }
       </div>

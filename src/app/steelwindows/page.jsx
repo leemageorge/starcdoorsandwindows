@@ -10,10 +10,10 @@ const SteelWindows = () => {
     <div className='overflow-hidden'>
       <div className='h-40 w-full mt-12 relative'>
         <Image src={smallBanner}
-          className="absolute top-0 left-0 w-full h-full rounded-md object-cover" alt="banner Image" />
+          className="absolute top-0 left-0 w-full h-full rounded-md object-fill" alt="banner Image" />
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
-        <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '>
-          <motion.h1 className='text-sm md:text-3xl lg:text-5xl text-white font-bold'
+        <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full '>
+          <motion.h1 className='text-2xl md:text-3xl lg:text-5xl text-white w-full text-center uppercase'
             initial={{ y:20, opacity:0 }}
             whileInView={{ y:0, opacity:1 }}
             transition={{ duration:1, ease: 'easeIn'}}>
@@ -21,10 +21,10 @@ const SteelWindows = () => {
         </div>
       </div>
       <div className="py-10 px-5">
-        <h2 className='text-center text-3xl text-red-700 font-bold mb-4'>Why Steel Windows ?<span className='text-primary font-extrabold ml-3 '>&#x2192;</span></h2>
+        <h2 className='text-center text-3xl text-red-700 uppercase mb-4'>Why choose Steel Windows ?<span className='text-primary text-3xl  ml-1 '>&#x2192;</span></h2>
 
         <div className='py-3 px-2 container'>
-          <motion.p className='text-justify px-5 py-3 text-gray-500 text-xl leading-10'   
+          <motion.p className='text-justify px-5 py-3 text-gray-500 text-md lg:text-lg lg:leading-10'   
               initial={{ x:20, opacity:0 }}
               whileInView={{ x:0, opacity:1 }}
             transition={{ duration:1, ease: 'easeIn'}} >

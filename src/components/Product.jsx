@@ -40,29 +40,27 @@ const productCards = [
      button:  "Explore More"
   },
 ]
-
-
-
 const Product = () => {
   return (
     <motion.div className='container mt-12 '
        initial={{x:-100, opacity: 0 }}
         whileInView={{x:0, opacity: 1 }}
-        transition={{duration:2, ease: 'easeIn' }}>
-      <div className='rounded-md shadow-lg py-2 bg-form PX-2'>
-       <motion.h2 className='text-center text-xl lg:text-3xl text-secondary font-bold mb-6 md:mb-6 mt-2'  initial={{x:-100, opacity: 0 }}
+        transition={{duration:1, ease: 'easeIn' }}>
+      <div className='rounded-md shadow-lg py-2 bg-cardBg PX-2'>
+       <motion.h2 className='text-center text-xl lg:text-3xl text-secondary  mb-6 md:mb-6 mt-2 uppercase' 
+        initial={{x:-100, opacity: 0 }}
         whileInView={{x:0, opacity: 1 }}
         viewport={{ once: true }}
-        transition={{duration:2, ease: 'easeIn' }}>We Are Ready To Supply <span className='text-secondary font-extrabold ml-3'>&#x2192;</span></motion.h2>
+        transition={{duration:1, ease: 'easeIn' }}>We Are Ready To Supply <span className='text-secondary font-extrabold ml-3 text-4xl'>&#x2192;</span></motion.h2>
       <div className='flex flex-wrap gap-4 lg:gap-6 justify-center '>
         {
           productCards.map((productCard)=>(
             <motion.div  className='relative' key={productCard.id} >    
             <Link className='cursor-pointer py-2 lg:py-4 px-1' key={productCard.id} href={productCard.url} >
-            <motion.div className='text-center text-xl text-secondary cursor-pointer font-bold mb-6 hover:text-slate-300 '
+            <motion.div className='text-center text-xl text-secondary cursor-pointer mb-6 hover:text-slate-300 uppercase'
                 initial={{x:-100, opacity: 0 }}
                 whileInView={{x:0, opacity: 1 }}
-                transition={{duration:2, ease: 'easeIn' }}>
+                transition={{duration:1, ease: 'easeIn' }}>
               {productCard.title}
             </motion.div>
                <Image src={productCard.src} alt={productCard.title} className='w-64 h-auto object-cover rounded-lg shadow-lg'/>

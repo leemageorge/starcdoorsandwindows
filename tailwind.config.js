@@ -20,7 +20,8 @@ export default {
         primary:"#0b7ab9",
         secondary: "#eff1ed",
         accent:"#727277",
-        form:'#49656b'
+        form:'#49656b',
+        cardBg:'#3d5a80'
        },
        backgroundImage:{
         "parallax": "url('../assets/images/parallaxbanner.webp')",
@@ -41,7 +42,7 @@ export default {
         },
       },
       animation: {
-        'slide-logos': 'slide-logos 50s linear infinite',
+        'slide-logos': 'slide-logos 20s linear infinite',
         'typing': 'typing 5s ease infinite',
       },
    

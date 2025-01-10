@@ -17,7 +17,7 @@ import D12 from "../assets/images/DOOR12.webp"
 import D13 from "../assets/images/DOOR13.webp"
 import D14 from "../assets/images/DOOR14.webp"
 
-import { motion,  useScroll, useTransform } from 'framer-motion';
+import { motion,useScroll,useTransform} from 'framer-motion';
 const SteelDoors = [
   {id:1,src: D1},
   {id:2,src: D2},
@@ -48,15 +48,16 @@ const SteelDoor = () => {
   return (
  
     <div className='flex flex-col gap-5'>
-      <motion.h2 className='text-2xl font-bold text-primary uppercase tracking-wide text-center mb-6' initial={{ x:60, opacity: 0 }}
+      {/* <motion.h2 className='text-2xl font-bold text-primary uppercase tracking-wide text-center mb-6' initial={{ x:60, opacity: 0 }}
       whileInView={{ x:0, opacity: 1 }}
-      transition={{ duration:1, ease: 'easeIn', delay:.2 }}>Steel Doors<span className='text-red-700 font-extrabold ml-3 '>&#x2192;</span></motion.h2>
+      transition={{ duration:1, ease: 'easeIn', delay:.2 }}>Steel Doors<span className='text-red-700 font-extrabold ml-3 '>&#x2192;</span></motion.h2> */}
       <div className='flex flex-wrap gap-5 items-center justify-center'   >
   {
     SteelDoors.map((steelDoor)=>(
-      <motion.div className='w-80 h-52 cursor-pointer bg-gray-100 ' key={steelDoor.id} onClick={()=>handleImageClick(steelDoor.src)} initial={{ opacity: 0 }}
+      <motion.div className='w-80 h-52 cursor-pointer bg-gray-100 ' key={steelDoor.id} onClick={()=>handleImageClick(steelDoor.src)} 
+      initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1, ease: 'easeIn', delay:.2 }}>
+      transition={{ duration: 1, ease: 'easeIn' }}>
         <Image src={steelDoor.src} alt="Steel Doors" className='w-full h-full object-contain rounded-lg shadow-md' />
       </motion.div>
     ))

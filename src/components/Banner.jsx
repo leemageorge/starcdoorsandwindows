@@ -23,15 +23,15 @@ const Banner = () => {
         whileInView={{ y:0,opacity: 1 }}
         transition={{ duration:1, ease: 'easeIn',delay:.2 }}
       >
-        <h1 className="w-full text-md md:text-2xl lg:text-4xl  font-extrabold uppercase text-center bg-gradienttext ">
+        <h1 className="w-full text-md md:text-2xl lg:text-4xl font-bold uppercase text-center bg-gradienttext ">
         Your Gateway to Strength and Style
    
         </h1>
         <Link
           href="tel:+919746097373"
-          className="cursor-pointer bg-red-700 text-white rounded-md shadow-xl hover:bg-transparent hover:text-red-500 text-sm  lg:text-md uppercase font-bold border hover:border-2 border-gray-400 px-4 py-2 transition duration-300"
+          className="cursor-pointer bg-red-700 text-white rounded-md shadow-xl hover:bg-transparent hover:text-red-500 text-md  lg:text-md Capitilize font-medium border hover:border-2 border-gray-400 px-4 py-2 transition duration-300"
         >
-          Connect Me→
+          Connect Me  →
         </Link>
       </motion.div>
       <motion.div
@@ -40,7 +40,7 @@ const Banner = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: 'easeIn', delay:.2}}
       >
-        <h2 className='text-md md:text-xl lg:text-2xl text-slate-300 font-extrabold w-full text-center animate-typing'>→With Starc Steel Windows and Doors</h2>
+        <h2 className='text-md md:text-xl lg:text-3xl text-slate-100 uppercase font-bold w-full text-center animate-typing'>→ With Starc Steel Windows and Doors</h2>
         </motion.div>
     </div>
   );

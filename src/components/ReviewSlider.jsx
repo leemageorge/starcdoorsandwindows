@@ -79,7 +79,7 @@ const ReviewSlider = () => {
                 alt={`${review.name}'s Avatar`}
               />
               <h2 className='text-center text-2xl'>{review.name}</h2>
-              <p className="line-clamp-2 ">{review.comment}</p>
+              <p className="line-clamp-2 text-slate-400 ">{review.comment}</p>
               <div className="flex gap-1">
                 {[...Array(5)].map((_, ratingIndex) => (
                   <Image

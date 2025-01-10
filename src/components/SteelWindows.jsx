@@ -30,6 +30,7 @@ import W25 from "../assets/images/w25.webp"
 import W26 from "../assets/images/w26.webp"
 import W27 from "../assets/images/w27.webp"
 
+import { motion} from 'framer-motion';
 
 const steelWindows = [
 
@@ -70,13 +71,16 @@ const SteelWindow = () => {
       
   return (
         <div className='flex flex-col gap-5'>
-          <h2 className='text-2xl font-bold text-primary uppercase tracking-wide text-center'>Steel Windows<span className='text-red-700 font-extrabold ml-3 '>&#x2192;</span></h2>
+          {/* <h2 className='text-2xl font-bold text-primary uppercase tracking-wide text-center'>Steel Windows<span className='text-red-700 font-extrabold ml-3 '>&#x2192;</span></h2> */}
           <div className='flex flex-wrap gap-5 items-center justify-center'>
       {
        steelWindows.map((steelWindow)=>(
-          <a href='#' className='w-80 h-auto cursor-pointer bg-gray-100 ' key={steelWindow.id} onClick={()=> handleImgClick(steelWindow.src)}>
+          <motion.div href='#' className='w-80 h-auto cursor-pointer bg-gray-100 ' key={steelWindow.id} onClick={()=> handleImgClick(steelWindow.src)}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, ease: 'easeIn' }}>
             <Image src={steelWindow.src} alt="Steel Doors" className='w-full h-full object-contain rounded-lg shadow-md' />
-          </a>
+          </motion.div>
         ))
       }
       </div>

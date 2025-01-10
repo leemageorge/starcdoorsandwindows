@@ -38,12 +38,12 @@ const LogoImages = [
 const LogoTracker = () => {
   return (
     <div className="mx-auto p-4 mt-12">
-      <motion.h2 className="text-center text-red-700 font-bold text-xl lg:text-3xl mb-4"
+      <motion.h2 className="text-center text-red-700 text-xl lg:text-3xl mb-4 uppercase"
        initial={{x:100, opacity: 0 }}
         whileInView={{x:0, opacity: 1 }}
         viewport={{ once: true }}
-        transition={{duration:2, ease: 'easeIn' }}>
-        <span className="text-primary mr-3 font-extrabold" 
+        transition={{duration:1, ease: 'easeIn' }}>
+        <span className="text-primary mr-3 text-4xl " 
         >&#x2190;</span>
         We Are Channel Partners for
       </motion.h2>
