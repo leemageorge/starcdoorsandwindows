@@ -80,13 +80,12 @@ const Guidance = () => {
       <div className="h-40 w-full mt-12 relative">
         <Image
           src={smallBanner}
-          objectFit="cover"
-          className="absolute top-0 left-0 w-full h-full rounded-md"
+          className="absolute top-0 left-0 w-full h-full rounded-md object-fill"
           alt="Banner Image"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-          <motion.h1 className="w-full text-2xl md:text-4xl text-white font-bold text-center capitalize" 
+          <motion.h1 className="w-full text-2xl md:text-4xl text-white font-bold text-center uppercase px-5" 
            initial={{ y:-20, opacity:0 }}
            whileInView={{ y:0, opacity:1 }}
            transition={{ duration:1, ease: 'easeIn'}}>

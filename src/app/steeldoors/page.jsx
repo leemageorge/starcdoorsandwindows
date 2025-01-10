@@ -24,7 +24,7 @@ const SteelDoors = () => {
   </div>
   </div>
   <div className=" container py-10 px-5">
-        <motion.h2 className='text-center text-3xl text-red-700 uppercase  mb-4' 
+        <motion.h2 className='text-center text-xl lg:text-3xl text-red-700 uppercase  mb-4' 
              initial={{ x:-40, opacity: 0 }}
             whileInView={{ x:0, opacity: 1 }}
             transition={{ duration:1, ease: 'easeIn'}} >Why choose Steel Doors ?<span className='text-primary font-extrabold ml-3 '>&#x2192;</span></motion.h2>

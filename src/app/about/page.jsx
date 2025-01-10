@@ -13,14 +13,14 @@ const About = () => {
           className="absolute object-fill top-0 left-0 w-full h-full rounded-md" alt="banner Image" />
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
         <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full '>
-          <motion.h1 className=' w-full text-2xl md:text-3xl lg:text-5xl text-white text-center font-medium uppercase'
+          <motion.h1 className=' w-full text-2xl md:text-3xl lg:text-5xl text-white text-center font-medium uppercase px-5'
           initial={{ y:20, opacity: 0 }}
            whileInView={{ y:0,opacity: 1 }}
             transition={{ duration:1, ease: 'easeIn'}}>We Make Your Home Safe</motion.h1>
         </div>
       </div>
       <div className="container py-10 px-5">
-        <motion.h2 className='text-center text-3xl text-red-700  uppercase  mb-4' 
+        <motion.h2 className='text-center text-xl lg:text-3xl text-red-700  uppercase  mb-2' 
         initial={{ x:60,opacity: 0 }}
         whileInView={{ x:0,opacity: 1 }}
         transition={{ duration:1, ease: 'easeIn',delay:.2 }}>What We Do<span className='text-primary font-extrabold ml-3 '>&#x2192;</span></motion.h2>

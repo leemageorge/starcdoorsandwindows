@@ -13,15 +13,15 @@ const FRPDoors= () => {
                 className="absolute top-0 left-0 w-full h-full rounded-md object-fill" alt="banner Image" />
   <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
   <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full'>
-      <motion.h1 className='w-full text-2xl md:text-2xl lg:text-4xl text-white font-medium  uppercase text-center'
+      <motion.h1 className='w-full text-2xl md:text-2xl lg:text-4xl text-white font-medium  uppercase text-center px-5'
       initial={{ x:-20, opacity: 0 }}
       whileInView={{ x:0, opacity: 1 }}
       transition={{ duration:1, ease: 'easeIn'}}>
         Make Your Bathroom Stylish</motion.h1>
   </div>
   </div>
-  <div className="py-10 px-5 container px-5">
-        <motion.h2 className='text-center text-3xl text-red-700 uppercase  mb-4'
+  <div className="py-10  container px-5">
+        <motion.h2 className='text-center text-xl lg:text-3xl text-red-700 uppercase  mb-2'
          initial={{ x:-40, opacity: 0 }}
          whileInView={{ x:0, opacity: 1 }}
          transition={{ duration:1, ease: 'easeIn'}}  >

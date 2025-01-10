@@ -14,7 +14,7 @@ const ContactForm = () => {
           <div className='bg-form w-full  p-8 shadow-lg text-secondary rounded flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 justify-between overflow-hidden'>
            <div className='flex flex-col space-y-8 justify-between'>
            <div className='w-full lg:w-3/4' >
-           <h2 className='text-xl text-white uppercase font-bold  tracking-widest '>Connect With Us<span className=' font-extrabold ml-3 '>&#x2192;</span> </h2>
+           <h2 className='text-xl lg:text-3xl text-white uppercase font-bold  tracking-widest text-center '>Connect With Us<span className=' font-extrabold ml-3 '>&#x2192;</span> </h2>
            <p className=' text-md lg:text-lg  text-gray-300 mt-6 text-justify '>
             Transform your space into a dream haven with our expert tips and trends! Whether you're looking
              to revamp your entire home or just want to give a single room a makeover, we're here to guide 
