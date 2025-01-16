@@ -16,11 +16,11 @@ const ContactForm = () => {
            <div className='w-full lg:w-3/4' >
            <h2 className='text-xl lg:text-3xl text-white uppercase font-bold  tracking-widest text-center '>Connect With Us<span className=' font-extrabold ml-3 '>&#x2192;</span> </h2>
            <p className=' text-md lg:text-lg  text-gray-300 mt-6 text-justify '>
-            Transform your space into a dream haven with our expert tips and trends! Whether you're looking
-             to revamp your entire home or just want to give a single room a makeover, we're here to guide 
-             you every step of the way. From modern minimalist designs to traditional Indian decor, we'll help
-              you create a space that reflects your unique style and personality. So, what are you waiting for?
-               Let's get started on this exciting journey to make your house a home!<br/><br/>
+           With our expert teams, transform your space into a more stylish one! 
+           If you're looking to makeover your entire home or a single portion, 
+           we're here to guide you through every single step. From modern to traditional design, 
+           we will help you to create a space in a unique. Why are you waiting for it? Let's get 
+           started on this exciting journey with us to make your home become heaven!<br/><br/>
                Drop me a line of message .... Let's Style Your Home</p>
            </div>
            <div className='flex flex-col space-y-6'>

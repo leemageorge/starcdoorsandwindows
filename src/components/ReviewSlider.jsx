@@ -64,7 +64,7 @@ const ReviewSlider = () => {
         setIndex((prevIndex) => (prevIndex === 0 ? reviews.length - 1 : prevIndex - 1));
       };
     return (
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center ">
         <div className="flex scroll-smooth  container">
           {reviews.map((review, i) => (
             <div

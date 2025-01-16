@@ -11,13 +11,9 @@ import D6 from "../assets/images/DOOR6.webp"
 import D7 from "../assets/images/DOOR7.webp"
 import D8 from "../assets/images/DOOR8.webp"
 import D9 from "../assets/images/DOOR9.webp"
-import D10 from "../assets/images/DOOR10.webp"
-import D11 from "../assets/images/DOOR11.webp"
-import D12 from "../assets/images/DOOR12.webp"
-import D13 from "../assets/images/DOOR13.webp"
-import D14 from "../assets/images/DOOR14.webp"
-
+import D10 from "../assets/images/DOOR14.webp"
 import { motion,useScroll,useTransform} from 'framer-motion';
+
 const SteelDoors = [
   {id:1,src: D1},
   {id:2,src: D2},
@@ -28,11 +24,7 @@ const SteelDoors = [
   {id:7,src: D7},
   {id:8,src: D8},
   {id:9,src: D9},
-  // {id:10,src: D10},
-  // {id:11,src: D11},
-  // {id:12,src: D12},
-  // {id:13,src: D13},
-  {id:14,src: D14},
+  {id:10,src: D10},
 ]
 const SteelDoor = () => { 
   const { scrollX } = useScroll();

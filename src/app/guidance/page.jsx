@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import smallBanner from "../../assets/images/smallbanner.png"
-import { motion } from 'framer-motion'
+
 
 const faqs = [
   {
@@ -31,38 +31,38 @@ const faqs = [
   },
   {
     QueNo:4,
-    question:"Which is better for windows and doors, wood  or steel doors",
-    answer: "compared to wood doors and windows steel doors and windows are more secure, strong, cost-effective long life low maintenance and energy-efficient"
+    question:"Are steel doors and windows customizable?",
+    answer: "Yes, it can be customised as per size. It is a long-term process so It is difficult to deliver fast. As per stock availability standard or normal size is recommended."
   },
   {
     QueNo:5,
-    question:"Which is better for windows and doors, wood  or steel doors",
-    answer: "compared to wood doors and windows steel doors and windows are more secure, strong, cost-effective long life low maintenance and energy-efficient"
+    question:"Can steel windows and doors be used in coastal areas?",
+    answer: "Of course, it can be used in coastal areas.  Proper and  regular maintenance prevents it  from rusting and damage"
   },
   {
     QueNo:6,
-    question:"Which is better for windows and doors, wood  or steel doors",
-    answer: "compared to wood doors and windows steel doors and windows are more secure, strong, cost-effective long life low maintenance and energy-efficient"
+    question:"Are steel windows and doors value for money or is it cost-effective?",
+    answer: "Yes, its modern look, durability, and low maintenance make them value for money. Thus, we can say that it is a long-term investment"
   },   
   {
     QueNo:7,
-    question:"Which is better for windows and doors, wood  or steel doors",
-    answer: "compared to wood doors and windows steel doors and windows are more secure, strong, cost-effective long life low maintenance and energy-efficient"
+    question:"how do maintain steel doors and windows?",
+    answer: "Wipe down the door with a dry cloth to remove dirt and dust Apply oil or lubricant to the hinges lock and handles for smooth working. Repaint every few years to maintain a fresh and new look."
   },
   {
     QueNo:8,
-    question:"Which is better for windows and doors, wood  or steel doors",
-    answer: "compared to wood doors and windows steel doors and windows are more secure, strong, cost-effective long life low maintenance and energy-efficient"
+    question:"Are fibre doors suitable for outdoor use?",
+    answer: "Yes, fibre doors are suitable for outdoors because they are weatherproof, waterproof and soundproof. It can be used for all weather conditions"
   },
   {
     QueNo:9,
-    question:"Which is better for windows and doors, wood  or steel doors",
-    answer: "compared to wood doors and windows steel doors and windows are more secure, strong, cost-effective long life low maintenance and energy-efficient"
+    question:"Can steel windows be repaired if damaged?",
+    answer: "Yes, minor damages like scratches can be repaired easily. Major damages like bends or dents may require professional repair or replaced."
   },  
   {
     QueNo:10,
-    question:"Which is better for windows and doors, wood  or steel doors",
-    answer: "compared to wood doors and windows steel doors and windows are more secure, strong, cost-effective long life low maintenance and energy-efficient"
+    question:"Are membrane doors resistant to termites? is it ideal for the exterior? How long does it last?",
+    answer: "Yes, it protect from termites and other pests. Because it is treated with chemicals. It is ideal for interior use like bedrooms, office rooms etc. With proper care, it can last up to 10 - 15 years and more"
   }
 ]
 
@@ -85,18 +85,12 @@ const Guidance = () => {
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-20"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-          <motion.h1 className="w-full text-2xl md:text-4xl text-white font-bold text-center uppercase px-5" 
-           initial={{ y:-20, opacity:0 }}
-           whileInView={{ y:0, opacity:1 }}
-           transition={{ duration:1, ease: 'easeIn'}}>
+          <h1 className="w-full text-2xl md:text-4xl text-white font-bold text-center uppercase px-5 animate-fade-in-down" >
             Frequently Asked Questions (FAQs)
-          </motion.h1>
+          </h1>
         </div>
       </div>
-      <motion.div className='container mt-12 mx-auto'  
-           initial={{ x:-40, opacity:0 }}
-           whileInView={{ x:0, opacity:1 }}
-           transition={{ duration:1, ease: 'easeIn'}}>
+      <div className='container mt-12 mx-auto animate-fade-in-up'>
       <div className="w-full min-h-screen bg-form rounded-lg py-4 relative">
           <div className="absolute z-0 w-40 h-40 bg-gray-200 rounded-full -right-7 -top-4 opacity-15"></div>
           <div className="absolute z-0 w-40 h-40 bg-gray-200 rounded-full -left-7 -bottom-4 opacity-15"></div>
@@ -119,7 +113,7 @@ const Guidance = () => {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
     </div>
   );
 };

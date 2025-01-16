@@ -5,6 +5,7 @@ import PetraLogo from '../assets/images/petralogo.webp'
 import StarkLogo from '../assets/images/starklogo.webp'
 import StalyLogo from '../assets/images/stalylogo.webp'
 import HawaiLogo from '../assets/images/hawailogo.webp'
+import WellcraftLogo from '../assets/images/wellcraftlogo.webp'
 import { motion } from "framer-motion";
 
 const LogoImages = [
@@ -31,13 +32,18 @@ const LogoImages = [
   {
     id: 5,
     src: StalyLogo,
-    alt: 'Staly'
+    alt: 'staly'
+  },
+  {
+    id: 6,
+    src: WellcraftLogo,
+    alt: 'WellcraftLogo'
   },
 ]
 
 const LogoTracker = () => {
   return (
-    <div className="mx-auto p-4 mt-12">
+    <div className="mx-auto p-4 mt-12 overflow-hidden">
       <motion.h2 className="text-center text-red-700 text-xl lg:text-3xl mb-4 uppercase"
        initial={{x:100, opacity: 0 }}
         whileInView={{x:0, opacity: 1 }}

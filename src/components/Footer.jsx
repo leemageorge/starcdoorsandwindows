@@ -71,7 +71,7 @@ const Footer = () => {
      </div>
     </div>
     </div>
-    <p className="text-sm mb-6 md:mb-0 mt-2 text-center p-2">@copyright 2024 by Star Steel Windows and Doors</p>
+    <p className="text-sm mb-6 md:mb-0 mt-2 text-center p-2">@copyright 2024 by Starc Steel Windows and Doors</p>
     </div>
   )
 }

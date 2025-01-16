@@ -42,17 +42,17 @@ const productCards = [
 ]
 const Product = () => {
   return (
-    <motion.div className='container mt-12 '
+    <motion.div className='container mt-12'
        initial={{x:-100, opacity: 0 }}
         whileInView={{x:0, opacity: 1 }}
         transition={{duration:1, ease: 'easeIn' }}>
-      <div className='rounded-md shadow-lg py-2 bg-cardBg PX-2'>
-       <motion.h2 className='text-center text-xl lg:text-3xl text-secondary  mb-6 md:mb-6 mt-2 uppercase' 
+      <div className='rounded-md shadow-lg bg-cardBg py-2 '>
+       <motion.h2 className='text-center text-xl lg:text-3xl text-secondary mb-3 mt-6 uppercase ' 
         initial={{x:-100, opacity: 0 }}
         whileInView={{x:0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{duration:1, ease: 'easeIn' }}>We Are Ready To Supply <span className='text-secondary font-extrabold ml-3 text-4xl'>&#x2192;</span></motion.h2>
-      <div className='flex flex-wrap gap-4 lg:gap-6 justify-center '>
+      <div className='flex flex-wrap gap-2 lg:gap-6 justify-center '>
         {
           productCards.map((productCard)=>(
             <motion.div  className='relative' key={productCard.id} >    
@@ -69,6 +69,13 @@ const Product = () => {
              </motion.div>
           ))
         }
+    </div>
+    <div className='mt-6 mb-6 w-full mx-auto flex justify-center '>
+      <Link href="tel:+919746097373"
+        className="cursor-pointer hover:bg-red-700 text-white rounded-md shadow-xl bg-transparent  text-lg  lg:text-xl Capitilize font-medium border hover:border-2 border-gray-400 px-4 py-2 transition duration-300"
+        >Connect Me  → </Link>
+                
+             
     </div>
 
     </div>

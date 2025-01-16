@@ -42,14 +42,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 bg-white shadow-md ">
-      <div className=" py-3 flex justify-between items-center w-full px-12">
+    <div className="fixed top-0 left-0 z-50 bg-white shadow-md w-full ">
+      <div className="container py-3  flex justify-between items-center w-full">
         <Link href="/">
           <Image src={StarkLogo} alt="logo image" className="w-20 md:w-28"  />
         </Link>
 
         {/* Navigation Links */}
-        <div className="hidden lg:flex gap-8 text-primary relative z-50">
+        <div className="hidden lg:flex gap-8 text-primary relative z-10">
           {links.map((link) => (
             <div key={link.id} className="text-md uppercase -tracking-wide" >
               {link.title === "Product Gallery" ? (
@@ -58,13 +58,13 @@ const Navbar = () => {
                     <Image src={Arrow} onClick={() => setDropdownOpen(!dropdownOpen)} alt="Arrow"/>
                   </span>
                   {dropdownOpen && (
-                    <div className="absolute bg-primary text-white top-9  rounded-lg shadow-lg py-3 px-5 flex flex-col ">
+                    <div className="absolute bg-primary text-white top-9 rounded-lg shadow-lg py-3 px-5 flex flex-col ">
                       {productDropdown.map((product) => (
                       <div className=" py-2 px-3 hover:bg-white hover:text-primary rounded-md " key={product.id}>
 
                           <Link
                            href={product.url}
-                          className="" onClick={()=>setDropdownOpen(!dropdownOpen)}
+                        onClick={()=>setDropdownOpen(!dropdownOpen)}
                         >
                           {product.title}
                         </Link>
@@ -93,34 +93,34 @@ const Navbar = () => {
           <Link
             href="https://www.facebook.com/starcwindow"
             target="_blank"
-            className="bg-primary w-7 h-7 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-red-500 hover:shadow-lg"
+            className="bg-primary w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-red-500 hover:shadow-lg"
           >
             <Image
               src={facebook}
               alt="facebook"
-              className=" w-3 h-3 md:w-5 md:h-5 object-cover"
+              className=" w-5 h-5 object-cover"
             />
           </Link>
           <Link
             href="https://www.instagram.com/starcwindow"
             target="_blank"
-            className="bg-primary w-7 h-7 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-amber-500 hover:shadow-lg"
+            className="bg-primary w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-amber-500 hover:shadow-lg"
           >
             <Image
               src={insta}
               alt="instagram"
-              className="w-3 h-3 md:w-5 md:h-5 object-cover"
+              className="w-5 h-5 object-cover"
             />
           </Link>
           <Link
             href="https://maps.app.goo.gl/JfjzrxJQ1BXsizn49"
             target="_blank"
-            className="bg-primary w-7 h-7 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-green-700 hover:shadow-lg"
+            className="bg-primary w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center hover:bg-green-700 hover:shadow-lg"
           >
             <Image
               src={location}
               alt="location"
-              className="w-3 h-3 md:w-5 md:h-5 object-cover"
+              className="w-5 h-5 object-cover"
             />
           </Link>
         </div>
