@@ -26,14 +26,15 @@ const SteelDoors = () => {
             initial={{ x:60, opacity: 0 }}
             whileInView={{ x:0, opacity: 1 }}
             transition={{ duration:1, ease: 'easeIn', delay:.2 }}>
-              Why do steel doors stand out in the market? There are multiple reasons. 
-                Their composition and manufacturing processes are different, 
-                resulting in a combination of strength, durability, and energy efficiency. 
-                 Compared to others, steel doors are better due to their low maintenance, 
-                 durability, and design.  Their protection against pests and weather conditions
-                  makes them number one in the market trends. Steel is much stronger than wood or 
-                  fibreglass, making it more difficult to break. The most important key feature 
-                  is their strong frames and specialized locking mechanisms. It gives us what the industry demands or what we need
+              At Starc, We supply premium quality steel doors and windows across Kerala.
+               Do you know, Why steel doors stand out in the market? There are multiple reasons. 
+               Their composition and manufacturing processes are different, resulting in a combination of 
+               strength, durability, and energy efficiency. Compared to other doors, steel doors are a
+                better option due to their low maintenance, durability, and design. Their protection against
+                 pests and weather conditions makes them number one in the market trends. Steel door is much stronger
+                  than wood or fibreglass, making it more difficult to break. The most important key feature is
+                   their strong frames and their look and design and also their specialized locking mechanisms.
+                    It gives us what the industry demands or what we need
             </p>
            </div>
        

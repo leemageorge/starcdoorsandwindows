@@ -23,16 +23,16 @@ const gothamLight = localFont({
 export const metadata = {
   metadataBase: new URL('https://starcsteelwindow.com'),
   title: {
-    default:"Starc Steel Windows and Doors",
+    default:"Top Steel Doors and Windows in Ernakulam, Kerala | Affordable Prices",
     template: "%s - Starc Steel Windows and Doors"
   },
-  description: " We specializes in supplying high-quality steel windows and doors throughout Kerala and other states.",
-  keywords:["steel doors windows in ernakulam,kerala","steel doors windows dealers in kerala" ,"steel doors and windows prices in kerala","bathroom doors in kerala","Fibre Doors in kerala","Membrane Doors in kerala" ],
+  description: " We specializes in supplying high-quality steel windows and doors throughout Kerala and other states",
+  keywords:["steel doors and windows in ernakulam,kerala","steel doors and windows dealers in kerala" ,"steel doors and windows prices in kerala","bathroom doors in ernakulam, kerala","Fibre Doors in ernakulam,kerala","Membrane Doors in ernakulam,kerala" ],
   author: "Starc Steel Windows and Doors",
   openGraph :{
       title:"Starc Steel Windows and Doors",
-      description:"We specializes in supplying high-quality steel windows and doors throughout Kerala and other states",
-      images:["public/opengraphmage.png"],
+      description:"We specialize in supplying high-quality steel windows and doors throughout Kerala and other states",
+      images:["public/opengraphimage.png"],
       url:"https://starcsteelwindow.com"
   },
    canonical: "https://starcsteelwindow.com"
