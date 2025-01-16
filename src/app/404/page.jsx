@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Page = () => {
+const NotFound = () => {
   return (
     <div className='container mt-8 relative overflow-hidden'>
       <h1 className='text-[150px] lg:text-[300px] text-center bg-gradienttext font-extrabold animate-typing '>404</h1>
@@ -16,4 +16,4 @@ const Page = () => {
   )
 }
 
-export default Page
+export default NotFound
