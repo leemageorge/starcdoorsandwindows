@@ -52,10 +52,15 @@ const Footer = () => {
       <p className="footer__links">Staly</p>
     </div>
     <div className="lg:mx-auto">
-      <h2 className="footer__heading">Office Address</h2>
+      <h2 className="footer__heading">Head Office Address</h2>
      <div className="flex items-center gap-4">
      <Image src={location} alt="location" className="w-[20px] h-[20px]"/>
      <p className="footer__links"> STARC,10/2080,Karuvelipady, Kochi-5</p>
+     </div>
+     <h2 className="footer__heading mt-6">Branch Office Address</h2>
+     <div className="flex items-center gap-4">
+     <Image src={location} alt="location" className="w-[20px] h-[20px]"/>
+     <p className="footer__links"> STARC,7/40A,Aluva Munnar Road,Chalakkal,Aluva,683105</p>
      </div>
      <div className="flex items-center gap-4 mt-4">
      <Image src={call} alt="call" className="w-[20px] h-[20px]"/>

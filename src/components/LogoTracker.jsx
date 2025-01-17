@@ -6,6 +6,7 @@ import StarkLogo from '../assets/images/starklogo.webp'
 import StalyLogo from '../assets/images/stalylogo.webp'
 import HawaiLogo from '../assets/images/hawailogo.webp'
 import WellcraftLogo from '../assets/images/wellcraftlogo.webp'
+import FusimLogo from '../assets/images/fusimlogo.webp'
 import { motion } from "framer-motion";
 
 const LogoImages = [
@@ -38,6 +39,11 @@ const LogoImages = [
     id: 6,
     src: WellcraftLogo,
     alt: 'WellcraftLogo'
+  },
+  {
+    id: 7,
+    src: FusimLogo,
+    alt: 'fusimLogo'
   },
 ]
 

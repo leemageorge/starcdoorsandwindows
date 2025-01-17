@@ -32,10 +32,12 @@ export const metadata = {
   openGraph :{
       title:"Starc Steel Windows and Doors",
       description:"We specialize in supplying high-quality steel windows and doors throughout Kerala and other states",
-      images:["public/opengraphimage.png"],
-      url:"https://starcsteelwindow.com"
+      images:["https://starcsteelwindow.com/public/opengraphimage.png"],
+      url:"https://www.starcsteelwindow.com",
+      type: "website",
+      site_name: "Starc Steel Windows and Doors"
   },
-   canonical: "https://starcsteelwindow.com"
+  canonical: "https://starcsteelwindow.com/"
   
 };
 
