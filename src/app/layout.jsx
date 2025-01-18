@@ -44,6 +44,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+     <meta name="google-site-verification" content="ld9QOsqcHLvzzULIqeemSxrqdBsTnsz_uN6GhqgFwCg" />
       <body
         className={clsx(`${gothamMedium.variable}, ${gothamLight.variable},"antialiased"`)}
       >

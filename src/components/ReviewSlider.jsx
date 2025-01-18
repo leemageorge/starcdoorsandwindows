@@ -76,6 +76,7 @@ const ReviewSlider = () => {
                 className="w-20 h-20 rounded-full"
                 width={80}
                 height={80}
+                unoptimized
                 alt={`${review.name}'s Avatar`}
               />
               <h2 className='text-center text-2xl'>{review.name}</h2>
