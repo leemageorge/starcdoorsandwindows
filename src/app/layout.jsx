@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import FloatingWhatsapp from '../components/FloatingWhatsapp';
 import ClickToScroll from '../components/ClickToScroll';
 import BottomNav from '../components/Bottomnav';
-
+import Script from 'next/script';
 
 const gothamMedium = localFont({
   src: './fonts/Gotham-Medium.woff',
@@ -44,7 +44,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+     <head>
      <meta name="google-site-verification" content="ld9QOsqcHLvzzULIqeemSxrqdBsTnsz_uN6GhqgFwCg" />
+     <Script async src="https://www.googletagmanager.com/gtag/js?id=G-66LK3GM1KT"></Script>
+    <Script id="google-analytics">
+          {
+             `window.dataLayer = window.dataLayer || [];
+             function gtag(){dataLayer.push(arguments);}
+             gtag('js', new Date());
+           
+             gtag('config', 'G-66LK3GM1KT');`
+          }
+      </Script>
+     </head>
       <body
         className={clsx(`${gothamMedium.variable}, ${gothamLight.variable},"antialiased"`)}
       >

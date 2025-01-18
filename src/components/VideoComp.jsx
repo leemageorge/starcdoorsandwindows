@@ -11,7 +11,7 @@ const VideoComp = () => {
   </div>
   <div className='w-[380px] h-[400px] '>
         <video className='w-full h-full object-cover rounded-md' controls preload="play">
-        <source src="/v1.mp4" type="video/mp4"/>
+        <source src="/v1.mp4" type="video/mp4"/> 
         </video>
         </div>
         <div className='w-[380px] h-[400px] '>
