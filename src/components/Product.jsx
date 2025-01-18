@@ -47,11 +47,36 @@ const Product = () => {
         whileInView={{x:0, opacity: 1 }}
         transition={{duration:1, ease: 'easeIn' }}>
       <div className='rounded-md shadow-lg bg-cardBg py-2 '>
+
+      <motion.h2 className='text-center text-xl lg:text-3xl text-secondary mb-3 mt-6 uppercase ' 
+        initial={{x:-100, opacity: 0 }}
+        whileInView={{x:0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{duration:1, ease: 'easeIn' }}>Who We Are <span className='text-secondary font-extrabold ml-3 text-4xl'>&#x2192;</span></motion.h2>
+      
+           <div className='py-3 px-2 '>
+           <p className='text-justify px-5 py-3 text-white text-lg lg:text-xl lg:leading-10 animate-fade-in-left' initial={{ x:-60,opacity: 0 }}
+             >
+              Starc Steel Windows and Doors specializes in supplying high-quality 
+              steel windows and doors throughout Kerala and other states. 
+              Our premium steel products enhance the beauty of your home while
+               providing strength and security. We offer customizable options to
+                meet specific architectural needs, ensuring lifelong durability
+                 and structural integrity. We focus on safety and elegance in both 
+                 residential and commercial spaces. We are proud to collaborate with
+                  partners like Kinza Steel Doors, Staly, Petra, Stark, and Hawaii.
+                   These partnerships strengthen our ability to deliver superior products
+                    and better serve our clients. You connect with trusted brands by partnering
+                     with Starc Steel Windows and Doors. We, the enthusiastic team will guide your entire project.
+                      Together, we can turn your dreams into a beautiful reality.
+            </p>
+           </div>
        <motion.h2 className='text-center text-xl lg:text-3xl text-secondary mb-3 mt-6 uppercase ' 
         initial={{x:-100, opacity: 0 }}
         whileInView={{x:0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{duration:1, ease: 'easeIn' }}>We Are Ready To Supply <span className='text-secondary font-extrabold ml-3 text-4xl'>&#x2192;</span></motion.h2>
+       
       <div className='flex flex-wrap gap-2 lg:gap-6 justify-center '>
         {
           productCards.map((productCard)=>(
